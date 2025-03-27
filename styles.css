@@ -1,0 +1,289 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation Bar */
+nav {
+    background: #000000;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #2e1829, #ff0000);
+    color: rgb(255, 255, 255);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+p1{
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+/* Section Headings with Black Box */
+h2 {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+h3 {
+    background: linear-gradient(to right, #000000, #ff0000);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: left;
+    text-decoration: underline; 
+
+}
+
+p2{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 17px;
+}
+
+ul1{
+
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.resume-btn {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: rgb(35, 49, 237);
+    padding: 10px;
+    display: inline-block; /* Ensures proper spacing */
+    margin-bottom: 80px; /* Adjust as needed */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+
+/* Portfolio Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+h4{  
+    background: linear-gradient(to right, #000000, #081692);
+    color: rgb(240, 240, 240);
+    padding: 3px;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: left;
+}
+p{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    display: inline-block;
+    background: #ff0011;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.skill:hover {
+    background: #000000;
+    transform: scale(1.05);
+}
+
+/* Download Resume Button */
+/* Download Resume Button */
+.download-resume {
+    display: block;
+    width: 200px;
+    margin: 20px auto; /* Centers the button and adds space above */
+    padding: 15px;
+    background: linear-gradient(45deg, #ff0000, #ff6600);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+    margin-bottom: 50px; /* Added space below */
+}
+
+.download-resume:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff6600, #ff0000);
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e03e24;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+.dark-mode nav {
+    background: #111;
+}
+
+.dark-mode section {
+    background: #333;
+}
+
+.dark-mode .project {
+    background: #444;
+}
+
+/* Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #c5371e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
