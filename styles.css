@@ -33,12 +33,16 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0; /* we’ll use gap instead */
 }
+
 
 nav ul li a {
     text-decoration: none;
@@ -434,4 +438,34 @@ h3 {
 
 
 /*extra*/
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav ul li a {
+    width: 90%;
+    max-width: 300px;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ffffff10; /* subtle contrast background */
+    border-radius: 8px;
+    display: block;
+  }
+
+  nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  nav ul li a.active {
+    border-bottom: none;
+    background-color: #00ffe1;
+    color: #000;
+  }
+}
+
 
