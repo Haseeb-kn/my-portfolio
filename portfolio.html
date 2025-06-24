@@ -1,125 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Haseebullah Niazi</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Haseebullah Niazi</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<script src="script.js" defer></script>
+
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<div class="wrapper">
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section>
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="images/glukometer.jpg" alt="Machine Learning" class="project-img">
-                <h4>Non-Invasive Blood Glucose Monitor</h4>
-                <p>This project focuses on developing a non-invasive blood glucose monitor using Near-Infrared (NIR) spectroscopy to measure glucose levels without the need for finger pricking. The system integrates ML modeling for accurate glucose level prediction, along with power management to ensure energy efficiency. The design includes PCB development, circuit testing, and precise calculations to optimize performance and reliability. This innovation aims to provide a painless, real-time monitoring solution for diabetic patients.</p>
-            </div>
+  <header class="portfolio-hero">
+  <div class="portfolio-hero-content">
+    <h1>My Engineering Portfolio</h1>
+  </div>
+</header>
 
-            <div class="project">
-                <img src="images/yolo.png" alt="Machine Learning" class="project-img">
-                <h4>Real-Time Vehicle Detection Using YOLO</h4>
-                <p>This project implements object detection using the YOLO (You Only Look Once) algorithm to accurately identify and track objects such as cars in real-time. The model is trained to detect multiple objects in various environments with high speed and efficiency. Applications include traffic monitoring, autonomous vehicles, and security surveillance. The system leverages deep learning for precise detection and classification, ensuring robust performance in real-world scenarios.</p>
-            </div>
+  <section class="portfolio-section">
+    <div class="project-grid">
 
-            <div class="project">
-                <img src="images/buck.png" alt="Power Systems" class="project-img">
-                <h4>Smart Buck Converter with Voltage Mode Control</h4>
-                <p>This project focuses on the design and implementation of a Buck Converter, a DC-DC step-down power converter, with Voltage Mode Control (VMC) for efficient voltage regulation. The system is modeled and simulated to optimize performance, ensuring stable output voltage under varying load conditions. PWM generation using TL494 is implemented to control the switching process. The design is tested in Proteus simulation, incorporating feedback mechanisms for enhanced stability and accuracy. Finally, the design is validated through hardware implementation, ensuring real-world applicability in power management systems.</p>
-            </div>
+      <!-- Project 1 -->
+      <div class="project-card">
+  <img src="images\glukometer.jpg" alt="Project 1 Screenshot">
+  <h3>FYP : Non-Invasive Blood Glucose Monitor</h3>
 
-            <div class="project">
-                <img src="images/antenna.jpg" alt="RF" class="project-img">
-                <h4>Design and Fabrication of Patch Antenna</h4>
-                <p>This project focuses on the design, simulation, and fabrication of a patch antenna using Ansys HFSS for high-frequency applications. The design process involves optimizing key parameters such as resonant frequency, gain, and radiation pattern to ensure efficient performance. After simulation and analysis in Ansys, the antenna is fabricated on a PCB board, followed by testing and validation to compare simulated and real-world performance. This project is crucial for applications in wireless communication, IoT, and RF systems.</p>
-            </div>
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>ESP32</span>
+    <span> C++</span>
+    <span>Python</span>
+    <span>PCB</span>
+    <span>Machine Learning</span>
+    <span>Power Management</span>
+  </div>
 
-            <div class="project">
-                <img src="images/DTMF.png" alt="RF" class="project-img">
-                <h4> DTMF Coder and Decoder</h4>
-                <p> This project involves the design and implementation of a Dual-Tone Multi-Frequency (DTMF) coder and decoder, commonly used in telecommunication systems for signal transmission over telephone lines. </p>
+  <p> A non-invasive blood glucose monitor using NIR spectroscopy and ML for real-time, painless glucose
+ prediction. The system captures NIR signals, processes them through trained models, and displays
+ glucose levels with high accuracy.</p>
 </div>
-            <div class="project">
-                    <img src="images/ecd.png" alt="Electronics" class="project-img">
-                    <h4> High-Gain Audio Amplifier for Condenser Microphone</h4>
-                    <p>This project designs a high-gain audio amplifier for a condenser microphone, ensuring a 100 Hz to 12 kHz frequency response with minimal distortion. It features a pre-amplifier using 2N3904 BJT and a class AB push-pull power stage with 2N3055 and MJ2955 transistors. Operating on a ±12V DC supply, it achieves an overall gain of 1000 V/V (60 dB) for efficient signal amplification </p>
-                    </div>
 
-            <div class="project">
-                     <img src="images/sns.png" alt="Signals and Systems" class="project-img">
-                     <h4>  5-Band Graphic Equalizer</h4>
-                    <p> This project involves the design and implementation of a 5-band graphic equalizer using MATLAB and Simulink, along with a user-friendly Graphical User Interface (GUI). The system allows users to adjust audio frequency bands for customized sound enhancement. The equalizer is designed with bandpass filters to control specific frequency ranges, ensuring precise audio adjustments. The GUI enables real-time interaction, allowing users to modify gain settings for each band. The project is validated through signal processing simulations, ensuring smooth performance and accurate frequency response.</p>
-                     </div>
 
-             <div class="project">
-                            <img src="images/em.png" alt="Power Systems" class="project-img">
-                            <h4>  Single-Phase Transformer with Multiple Voltage Taps</h4>
-                            <p> This project focuses on the design and implementation of a single-phase transformer with a primary voltage of 12V and a secondary voltage of 24V while supplying 2A of current, yielding an apparent power of 48 VA. The transformer is designed with multiple taps on the secondary winding to provide voltage outputs of 8V, 16V, and 24V, ensuring versatility for various applications.
 
-                                The design process includes core selection, winding calculations, and efficiency optimization, ensuring minimal losses and stable performance</p>
-                            </div>
+      <div class="project-card">
+  <img src="\images\buck.jpeg" alt="Project 2 Screenshot">
+  <h3>Buck Converter</h3>
 
-             <div class="project">
-                                <img src="images/im.png" alt="Embedded Systems" class="project-img">
-                                <h4>  Instrumented Battery Module (IBM) for Real-Time Battery Monitoring</h4>
-                                <p> This project develops an Instrumented Battery Module (IBM) for real-time monitoring of voltage, current, temperature, power, and energy parameters. The system integrates thermocouples, voltage sensors, current sensors, and thermistors, with an Arduino-based data acquisition system for efficient processing and analysis. An LCD display provides real-time feedback, enabling better thermal management and battery performance assessment. </p>
-                                </div>
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Power Electronics</span>
+    <span> Proteus</span>
+    <span>Control</span>
+    <span>Testing</span>
+  </div>
 
-            <div class="project">
-                                    <img src="images/ps.png" alt="Machine Learning" class="project-img">
-                                    <h4>Customer Satisfaction Analysis: A Python-Based Survey Data Processing System</h4>
-                                    <p>In today’s competitive market, understanding customer satisfaction is crucial for product success. This project focuses on developing a Python-based system that simulates customer survey ratings, performs statistical analysis, and visualizes the data for better insights. The system will generate random survey data, compute key descriptive statistics such as mean, median, and standard deviation, and visualize rating distributions using histograms. </p>
-                                    </div>
+  <p> A buck converter using TL494 PWM controller to step down DC voltage efficiently through MOSFET
+ switching and LC filtering. It regulates output via feedback control for stable, low-ripple power delivery</p>
+</div>
 
-             <div class="project">
-                                        <img src="images/MPS.png" alt="Embedded Systems" class="project-img">
-                                        <h4> Smart Soil Moisture Monitoring System Using AVR ATmega32</h4>
-                                        <p> This project implements a smart soil moisture sensing system using an AVR ATmega32 microcontroller and a YL-69 soil moisture sensor. The system continuously measures soil moisture levels and displays real-time data on a 16x4 LCD screen. It helps in optimizing irrigation by providing accurate moisture readings, reducing water wastage, and improving crop health. The project is designed for precision agriculture, smart irrigation systems, and environmental monitoring.                                        </p>
-                                        </div>
+     <!-- Project -->
+      <div class="project-card">
+  <img src="\images\im.png" alt="Project 3 Screenshot">
+  <h3>Instrumented Battery Management System</h3>
 
-            <div class="project">
-                                            <img src="images/edc.jpg" alt="Power Systems" class="project-img">
-                                            <h4>DC Variable Power Supply with Constant & Adjustable Voltage Output</h4>
-                                            <p> This project focuses on designing a DC Variable Power Supply that provides both constant and adjustable voltage outputs. Using an LM317T voltage regulator, a zener diode, and a BJT 2N3904 transistor, the system ensures a stable 5V constant output while also allowing adjustable voltage regulation from a 24V step-down transformer. The project is essential for electronics testing, prototyping, and power management applications, ensuring smooth and noise-free voltage conversion.</p>
-                                            </div>
-            <div class="project">
-                                                <img src="images/emft.png" alt="RF" class="project-img">
-                                                <h4>Metal Detector using Mutual Inductance</h4>
-                                                <p>  Mutual inductance-based metal detectors rely on the interaction between two coils to detect metal objects, whereas self-inductance-based detectors utilize the changes in a single coil's magnetic field. The project provides a detailed theoretical analysis, circuit implementation, and practical evaluation of both methods, highlighting their advantages and limitations.</p>
-                                                </div>
-            <div class="project">
-                                                    <img src="images/dld.png" alt="Embedded Systems" class="project-img">
-                                                    <h4>4-Bit Arithmetic Logic Unit (ALU)</h4>
-                                                    <p> This project involves the design and implementation of a 4-bit Arithmetic Logic Unit (ALU) using Digital Logic Design (DLD) principles. The ALU takes two 4-bit inputs and performs a variety of arithmetic and logic operations, including addition, subtraction, complements, increment, decrement, bitwise operations, and comparison. The design is implemented on a breadboard using logic gates and simulated in Proteus for validation.</p>
-                                                    </div>
-             <div class="project">
-                                                        <img src="images/oop.webp" alt="C++" class="project-img">
-                                                        <h4>OOP-Based Audio Player with GUI in C++</h4>
-                                                        <p> This project involves designing an Audio Player using Object-Oriented Programming (OOP) principles in C++, with an intuitive Graphical User Interface (GUI). The player will support basic audio playback functions like play, pause, stop, forward, rewind, and volume control.</p>
-                                                        </div>
-            <div class="project">
-                                                            <img src="images/ed.png" alt="autocad" class="project-img">
-                                                            <h4>3D Shaft Modeling in AutoCAD</h4>
-                                                            <p> In this project, we design a 3D model of a mechanical shaft based on the given technical drawing using AutoCAD. The shaft consists of multiple stepped sections, keyways, and detailed features such as chamfers, fillets, and threaded areas. The modeling process involves using basic 3D commands like Cylinder, Extrude, Subtract, Fillet, and Revolve to create an accurate representation of the shaft. This project helps in understanding real-world engineering design, manufacturing requirements, and technical drawing interpretation for practical applications in mechanical engineering and CAD/CAM.</p>
-                                                            </div>
-            
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Power Electronics</span>
+    <span> Electrical Instruments</span>
+    <span>Proteus</span>
+    <span>Arduino</span>
+  </div>
 
-        </div>
-        <a href="https://github.com/Haseeb-kn" class="btn">View More Projects</a>
-    </section>
+  <p>  developed an Instrumented Battery Module (IBM) using Arduino and multiple sensors to
+ monitor voltage, current, temperature, and energy in real time</p>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Haseebullah Niazi</p>
-    </footer>
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\im.png" alt="Project 4 Screenshot">
+  <h3>Discrete-Component Audio Amplifier </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Electronic Circuits and Design</span>
+    <span> Multisim</span>
+    <span>Proteus</span>
+    <span>Power Management</span>
+  </div>
+
+  <p> Class AB audio amplifier for a condenser microphone using BJTs and MOSFETs, achieving
+ 60 dB gain and wideband frequency response. It ensures efficient signal amplification and power
+ delivery to an 8Ω speaker under ±12 V DC supply</p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\edc.jpg" alt="Project 5 Screenshot">
+  <h3>Linear Variable Voltage Supply </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Electronic Devices and Circuits</span>
+    <span> Proteus</span>
+    <span>Voltage Regulation</span>
+    <span>PCB</span>
+  </div>
+
+  <p> Design and implementation of a regulated DC power supply capable of delivering both constant
+ 5V and variable 1.25V–24V output from a 230V AC input.</p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\dld.png" alt="Project 6 Screenshot">
+  <h3>Arithematic Logic Unit </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>ICs</span>
+    <span> Proteus</span>
+    <span>Digital Logic Design</span>
+    <span>Architecture</span>
+  </div>
+
+  <p>  Building a basic 4-bit Arithmetic Logic Unit (ALU) on a breadboard using CMOS ICs,
+ and simulating the design in Proteus for verification</p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\robot.jpeg" alt="Project 7 Screenshot">
+  <h3>Line Follower Robot </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Sensor Integration</span>
+    <span> Arduino</span>
+    <span>C</span>
+    <span>Control</span>
+  </div>
+
+  <p>  An autonomous robot built using Arduino, IR sensors, and DC motors that follows a black line path by
+ continuously adjusting its movement based on sensor feedback. </p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\oximeter.jpeg" alt="Project 7 Screenshot">
+  <h3>Oximeter </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>I2c Communication</span>
+    <span> Arduino IDE</span>
+    <span>ESP32</span>
+    <span>Data Collection</span>
+    <span>Machine Learning</span>
+  </div>
+
+  <p>  Measures the SpO2 reading of a person based on IR Spectroscopy, The algorithm was set incomparision with market
+ available oximeter </p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\MPS.png" alt="Project 7 Screenshot">
+  <h3> Soil Moisture Monitoring System </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Atmega 32</span>
+    <span> Arduino IDE</span>
+    <span>Sensor Integration</span>
+    <span>Microprocessor Systems</span>
+  </div>
+
+  <p>  This battery-powered embedded system uses an ATmega32 microcontroller to read soil moisture levels
+ via an analog soil moisture sensor and displays the results on a 16x4 LCD in percentage format. </p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\ena.png" alt="Project 7 Screenshot">
+  <h3> Active Bandpass Filter</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Electric Network Analysis</span>
+    <span> Proteus</span>
+    <span>Ltspice</span>
+    <span>Amplifiers</span>
+  </div>
+
+  <p>   A circuit designed using operational amplifiers to allow signals within a specific frequency range to pass
+ while attenuating others </p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\em.png" alt="Project 7 Screenshot">
+  <h3> Single Phase Transformer</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Electric Machines</span>
+    <span> MATLAB</span>
+    <span>SIMULINK</span>
+    <span>Electric Design</span>
+  </div>
+
+  <p>  Designing and implementation of a single-phase transformer that steps up 12V to
+ 24V with a 2A load and 48 VA apparent power. Multiple output taps (8V, 16V, 24V) were integrated for
+ versatile applications </p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\cv.jpeg" alt="Project 7 Screenshot">
+  <h3> Pose Estimation for Human-Computer Interaction</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Computer Vision</span>
+    <span> Pytorch</span>
+    <span>Tesnsorflow</span>
+    <span>Python</span>
+  </div>
+
+  <p>  A real-time human pose estimation system using classical and deep learning(Mediapipe) methods. It
+ enables gesture recognition and depth mapping</p>
+</div>
+
+ <!-- Project -->
+      <div class="project-card">
+  <img src="\images\yolo.png" alt="Project 7 Screenshot">
+  <h3> Traffic Analysis </h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Computer Vision</span>
+    <span> Machine Learning</span>
+    <span>Semantic Segmentation</span>
+    <span>YOLO</span>
+  </div>
+
+  <p>  A real-time object detection and semantic segmentation system using the YOLO algorithm and deep
+ learning to identify, classify, and segment multiple objects in diverse environments. </p>
+</div>
+
+<!-- Project -->
+      <div class="project-card">
+  <img src="\images\antenna.jpg" alt="Project 7 Screenshot">
+  <h3> Microstrip Patch Antenna</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Waves</span>
+    <span> PCB</span>
+    <span>Ansys</span>
+  </div>
+
+  <p>  A 5 db, 2.5 GHz, 60x60mm and 50 Bandwidth simulation and Etchining antenna on PCB </p>
+</div>
+      
+
+<!-- Project -->
+      <div class="project-card">
+  <img src="\images\sns.png" alt="Project 7 Screenshot">
+  <h3> 5 Band Graphic Equilizer</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Signal and Systems</span>
+    <span> MATLAB</span>
+    <span>SIMULINK</span>
+  </div>
+
+  <p>   Implements a 5-band audio graphic equalizer using MATLAB and Simulink, applying Signal and
+ Systems techniques and Butterworth filters at key audio frequencies with a user friendly GUI. </p>
+</div>
+
+      
+
+<!-- Project -->
+      <div class="project-card">
+  <img src="\images\DTMF.png" alt="Project 7 Screenshot">
+  <h3> DTMF Coder and Decoder</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Communication Systems</span>
+    <span> MATLAB</span>
+    <span>SIMULINK</span>
+  </div>
+
+  <p>   Implements a DTMF coder and decoder using MATLAB to generate and detect dual-tone signals for
+ each keypad input. </p>
+</div>
+
+<!-- Project -->
+      <div class="project-card">
+  <img src="\images\dsp.jpeg" alt="Project 7 Screenshot">
+  <h3> EEG Data Cleaner</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>Digital Signal Processing</span>
+    <span> MATLAB</span>
+    <span>Transforms</span>
+  </div>
+
+  <p>  Applying digital filters to EEG data using MATLAB to remove noise and enhancing signal quality for
+ accurate brain activity analysis. </p>
+</div>
+
+<!-- Project -->
+      <div class="project-card">
+  <img src="\images\oop.webp" alt="Project 7 Screenshot">
+  <h3> Audio Player</h3>
+
+  <!-- Skill Tags -->
+  <div class="project-skills">
+    <span>OOP</span>
+    <span> C++</span>
+    <span>Visual Studio</span>
+  </div>
+
+  <p>  A C++-based audio player with playlist shuffle/save/load, and persistent state. Implemented using
+ object-oriented programming and file handling with optional GUI. </p>
+</div>
+
+
+<!-- extra-->
+
+
+      <!-- Add more project cards below -->
+
+       
+        <a href="portfolio.pdf" class="resume-btn" download>Download Portfolio</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Haseebullah Niazi</p>
+  </footer>
+</div>
 </body>
 </html>

@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - Haseebullah Niazi</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Haseebullah Niazi</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<script src="script.js" defer></script>
+
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<div class="wrapper">
 
-    <section>
-        <h2>My Skills</h2>
-        <h3>Technical Skills</h3>
-        <div class="skills-container">
-            <a href="portfolio.html#ml-projects" class="skill">Machine Learning</a>
-            <a href="portfolio.html#ai-projects" class="skill">Artificial Intelligence</a>
-            <a href="portfolio.html#power-systems" class="skill">Power Systems</a>
-            <a href="portfolio.html#web-dev" class="skill">Web Development</a>
-            <a href="portfolio.html#programming" class="skill">Pythont</a>
-            <a href="portfolio.html#programming" class="skill">MATLAB</a>
-            <a href="portfolio.html#programming" class="skill">C++</a>
-            <a href="portfolio.html#programming" class="skill">Proteus</a>
-            <a href="portfolio.html#programming" class="skill">Ansys</a>
-            <a href="portfolio.html#programming" class="skill">Modelsim</a>
-            <a href="portfolio.html#programming" class="skill">Quartus Prime</a>
-            <a href="portfolio.html#programming" class="skill">Xilinx</a>
-            <a href="portfolio.html#programming" class="skill">Multisim</a>
-            <a href="portfolio.html#programming" class="skill">Control Systems</a>
-            <a href="portfolio.html#programming" class="skill">Arduino</a>
-            <a href="portfolio.html#programming" class="skill">Embedded Systems</a>
-            <a href="portfolio.html#programming" class="skill">PCB Design</a>
-        </div>
-        <br> <!-- Adds space -->
-        <h3>Soft Skills</h3>
-        <div class="skills-container">
-            <a href="portfolio.html#ml-projects" class="skill">Problem-Solving</a>
-            <a href="portfolio.html#ai-projects" class="skill">Analytical Thinking</a>
-            <a href="portfolio.html#power-systems" class="skill">Project Management</a>
-            <a href="portfolio.html#web-dev" class="skill">Attention to Detail</a>
-            <a href="portfolio.html#programming" class="skill">Simulation & Testing</a>
-            <a href="portfolio.html#programming" class="skill">Tean Work</a>
-        
-        </div>
-    </section>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>&copy; 2025 Haseebullah Niazi</p>
-    </footer>
+  <!-- Hero -->
+  <header class="skills-hero">
+    <h1>Technical Skills</h1>
+    <p class="tagline">My expertise across software, embedded, and design tools</p>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+
+    <div class="skill-group">
+      <h2>Programming Languages</h2>
+      <div class="skill-badges">
+        <span>C</span><span>C++</span><span>Python</span><span>MATLAB</span><span>Verilog</span><span>CSS</span><span>HTML</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h2>Softwares</h2>
+      <div class="skill-badges">
+        <span>Arduino IDE</span><span>Visual Studio</span><span>VS Code</span><span>MATLAB</span><span>SIMULINK</span><span>Proteus</span><span>Ltspice</span><span>Multisim</span><span>Ansys</span><span>Quartus Prime</span><span>Modelsim</span><span>Xilinx</span><span>Autocad</span><span>MPLAB X</span><span>Kicad</span>
+      </div>
+    </div>
+
+  
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Haseebullah Niazi</p>
+    <p>V: <span id="visitor-count"></span></p>
+  </footer>
+</div>
 </body>
 </html>
