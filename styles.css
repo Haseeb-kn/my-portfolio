@@ -20,13 +20,15 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: #000000;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  background: #000000;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  overflow-x: auto; /* Enables horizontal scrolling if needed */
+  white-space: nowrap; /* Keeps nav items in a single line */
 }
 
 nav ul {
@@ -45,27 +47,29 @@ nav ul li {
 
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 15px;              /* More horizontal padding */
-    transition: color 0.3s, background 0.3s;
-    border: 2px solid #000000;       /* Visible block border */
-    border-radius: 5px;              /* Rounded corners */
-    background-color: transparent;   /* Transparent by default */
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ffffff44;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
 }
 
-
 nav ul li a:hover {
-    color: #000000;
-    background-color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 nav ul li a.active {
   border-bottom: 2px solid #00ffe1;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   color: #ffffff;
 }
+
 
 /* Hero Section */
 .hero {
